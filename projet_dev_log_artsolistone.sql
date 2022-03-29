@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : mar. 22 mars 2022 à 12:34
+-- Généré le : mar. 29 mars 2022 à 12:52
 -- Version du serveur : 10.4.22-MariaDB
 -- Version de PHP : 8.0.13
 
@@ -56,6 +56,15 @@ CREATE TABLE `users` (
   `special_pioche` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Déchargement des données de la table `users`
+--
+
+INSERT INTO `users` (`id`, `photo_profil`, `name`, `email`, `nb_win`, `nb_equality`, `nb_lose`, `nb_xp`, `nb_pieces`, `nb_skins`, `ratio`, `special_lock`, `special_pioche`) VALUES
+(1, '', '', '', 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(2, '', '', '', 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(3, '1', '', '', 0, 0, 0, 0, 0, 0, 0, 0, 0);
+
 -- --------------------------------------------------------
 
 --
@@ -64,7 +73,8 @@ CREATE TABLE `users` (
 
 CREATE TABLE `users_skins` (
   `id_users` int(11) NOT NULL,
-  `id_skins` int(11) NOT NULL
+  `id_skins` int(11) NOT NULL,
+  `id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -84,6 +94,14 @@ ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Index pour la table `users_skins`
+--
+ALTER TABLE `users_skins`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `id_users` (`id_users`),
+  ADD KEY `id_skins` (`id_skins`);
+
+--
 -- AUTO_INCREMENT pour les tables déchargées
 --
 
@@ -97,7 +115,24 @@ ALTER TABLE `skins`
 -- AUTO_INCREMENT pour la table `users`
 --
 ALTER TABLE `users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT pour la table `users_skins`
+--
+ALTER TABLE `users_skins`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- Contraintes pour les tables déchargées
+--
+
+--
+-- Contraintes pour la table `users_skins`
+--
+ALTER TABLE `users_skins`
+  ADD CONSTRAINT `users_skins_ibfk_1` FOREIGN KEY (`id_users`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `users_skins_ibfk_2` FOREIGN KEY (`id_skins`) REFERENCES `skins` (`id_skins`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
