@@ -4,8 +4,6 @@ import pygame
 class Window:
 
     def __init__(self):
-        pygame.init()
-
         self.screen_title = "ArtSoliStone"
         self.screen_width = 1080
         self.screen_height = 720
@@ -20,8 +18,3 @@ class Window:
         self.running = False
         print("Game closed !")
         pygame.quit()
-
-    # Apply/refresh background and window size
-    def reload(self):
-        self.screen.blit(self.background, (0, 0))
-        pygame.display.flip()
