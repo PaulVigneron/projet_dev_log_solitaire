@@ -35,6 +35,24 @@ top_y = screen_height - slot_height / 2 - slot_height * vertical_margin_scale
 # The Y of the middle row (7 piles)
 middle_y = top_y - slot_height - slot_height * vertical_margin_scale
 
-# TODO: How far apart each pile goes
-x_spacing = slot_height + slot_width * horizontal_margin_scale / 2
+# How far apart each pile goes
+x_spacing = slot_height + slot_width * horizontal_margin_scale
 
+# If cards are stacked on each other, it has this small gap
+card_vertical_gap = card_height * card_scale * 0.3
+
+# Pile that represents all pile in the game
+pile_count = 13
+bottom_face_down_pile = 0
+bottom_face_down_up = 1
+play_pile_1 = 2
+play_pile_2 = 3
+play_pile_3 = 4
+play_pile_4 = 5
+play_pile_5 = 6
+play_pile_6 = 7
+play_pile_7 = 8
+top_pile_1 = 9
+top_pile_2 = 10
+top_pile_3 = 11
+top_pile_4 = 12
