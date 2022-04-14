@@ -19,6 +19,9 @@ class Window(arcade.Window):
         # List of cards position
         self.held_cards_initial_position = None
 
+        # List with all the slots for the cards
+        self.slot_list = None
+
     def setup(self):
         """ Set up the game here. Call this function to restart the game. """
 
@@ -28,18 +31,48 @@ class Window(arcade.Window):
         # List of cards position
         self.held_cards_initial_position = []
 
+        # --- Creating slots for cards
+
+        # Sprite list with all the slots
+        self.slot_list: arcade.SpriteList = arcade.SpriteList()
+
+        # Bottom slots (2 slots)
+        slot = arcade.SpriteSolidColor(constants.slot_width, constants.slot_height, arcade.csscolor.DARK_OLIVE_GREEN)
+        slot.position = constants.start_x, constants.bottom_y
+        self.slot_list.append(slot)
+
+        slot = arcade.SpriteSolidColor(constants.slot_width, constants.slot_height, arcade.csscolor.DARK_OLIVE_GREEN)
+        slot.position = constants.start_x + constants.x_spacing, constants.bottom_y
+        self.slot_list.append(slot)
+
+        # Middle slots (7 slots)
+        for i in range(7):
+            slot = arcade.SpriteSolidColor(constants.slot_width, constants.slot_height, arcade.csscolor.DARK_OLIVE_GREEN)
+            slot.position = constants.start_x + i * constants.x_spacing, constants.middle_y
+            self.slot_list.append(slot)
+
+        # Top slots (4 slots)
+        for i in range(4):
+            slot = arcade.SpriteSolidColor(constants.slot_width, constants.slot_height, arcade.csscolor.DARK_OLIVE_GREEN)
+            slot.position = constants.start_x + i * constants.x_spacing, constants.top_y
+            self.slot_list.append(slot)
+
+        # Sprite list with all the cards
         self.card_list = arcade.SpriteList()
 
         for card_suit in constants.card_suits:
             for card_value in constants.card_values:
                 card = Card(card_suit, card_value)
-                card.position = constants.START_X, constants.BOTTOM_Y
+                card.position = constants.start_x, constants.bottom_y
                 self.card_list.append(card)
 
     def on_draw(self):
         """ Render the screen. """
         # Clear the screen
         arcade.start_render()
+
+        # Draw slots
+        self.slot_list.draw()
 
         # Draw the cards
         self.card_list.draw()
