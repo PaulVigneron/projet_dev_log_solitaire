@@ -44,7 +44,7 @@ card_vertical_gap = card_height * card_scale * 0.3
 # Pile that represents all pile in the game
 pile_count = 13
 bottom_face_down_pile = 0
-bottom_face_down_up = 1
+bottom_face_up_pile = 1
 play_pile_1 = 2
 play_pile_2 = 3
 play_pile_3 = 4
