@@ -1,0 +1,14 @@
+C:\B2\UnityServer\ServerArtSoliStone\ServerArtSoliStone\bin\Debug\netcoreapp3.1\ServerArtSoliStone.exe
+C:\B2\UnityServer\ServerArtSoliStone\ServerArtSoliStone\bin\Debug\netcoreapp3.1\ServerArtSoliStone.deps.json
+C:\B2\UnityServer\ServerArtSoliStone\ServerArtSoliStone\bin\Debug\netcoreapp3.1\ServerArtSoliStone.runtimeconfig.json
+C:\B2\UnityServer\ServerArtSoliStone\ServerArtSoliStone\bin\Debug\netcoreapp3.1\ServerArtSoliStone.runtimeconfig.dev.json
+C:\B2\UnityServer\ServerArtSoliStone\ServerArtSoliStone\bin\Debug\netcoreapp3.1\ServerArtSoliStone.dll
+C:\B2\UnityServer\ServerArtSoliStone\ServerArtSoliStone\bin\Debug\netcoreapp3.1\ServerArtSoliStone.pdb
+C:\B2\UnityServer\ServerArtSoliStone\ServerArtSoliStone\obj\Debug\netcoreapp3.1\ServerArtSoliStone.csproj.AssemblyReference.cache
+C:\B2\UnityServer\ServerArtSoliStone\ServerArtSoliStone\obj\Debug\netcoreapp3.1\ServerArtSoliStone.GeneratedMSBuildEditorConfig.editorconfig
+C:\B2\UnityServer\ServerArtSoliStone\ServerArtSoliStone\obj\Debug\netcoreapp3.1\ServerArtSoliStone.AssemblyInfoInputs.cache
+C:\B2\UnityServer\ServerArtSoliStone\ServerArtSoliStone\obj\Debug\netcoreapp3.1\ServerArtSoliStone.AssemblyInfo.cs
+C:\B2\UnityServer\ServerArtSoliStone\ServerArtSoliStone\obj\Debug\netcoreapp3.1\ServerArtSoliStone.csproj.CoreCompileInputs.cache
+C:\B2\UnityServer\ServerArtSoliStone\ServerArtSoliStone\obj\Debug\netcoreapp3.1\ServerArtSoliStone.dll
+C:\B2\UnityServer\ServerArtSoliStone\ServerArtSoliStone\obj\Debug\netcoreapp3.1\ServerArtSoliStone.pdb
+C:\B2\UnityServer\ServerArtSoliStone\ServerArtSoliStone\obj\Debug\netcoreapp3.1\ServerArtSoliStone.genruntimeconfig.cache
