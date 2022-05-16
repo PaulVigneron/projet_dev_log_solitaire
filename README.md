@@ -1,48 +1,30 @@
-# Projet ArtSoliStone :
+ArtSoliStone
 
-**Repo :** https://github.com/PaulVigneron/projet_dev_log_solitaire
+    Groupe : Gaëtan Roux, Clément Manant, Paul Vigneron
 
-## **Objectifs principaux :**
+    Présentation du projet : Notre projet était de créer le jeu SOLITAIRE sur Unity.
 
-- Animation win
-- Créer un solitaire avec un timer
-- Créer une base de données
-- Créer différents designs de cartes
-- **Système de matchmaking :**
-  - File d'attente (timer, info) (**socket 3/4 pts**)
-  - Possibilité de win ou égalité (**5/6 pts**)
-  - Délai avant commencement pour choisir cartes etc... (**1 pts**)
-  - Gain XP + pièces (**1 pts**)
-- **Profil :**
-  - Possibilité de lié sont compte (récupérer etc...) (**2 pts**)
-  - Changer pseudo ( **'\*4'**)
-  - Voir ses cartes (choisir skin) (**4 pts**)
-  - Mettre une photo de profil (**'\*4'**)
-  - Ratio d/v ( )
+    Procédure d'installation du projet en local :
 
-## **Objectifs secondaires :**
+    Logiciel : Installez Visual Studio et Unity sur votre Navigateur préféré ;)
 
-- Equilibre du niveau (**4 pts**)
-- Jouer contre un bot (**6 pts**)
-- Demande confirmation avant de lancer partie (**1 pts**)
-- Historique parties (**1 pts**)
-- Système de ranked : (**3 pts**)
-  - Gain de XP après une partie
-  - Récompense à chaque rank (de plus en plus bien woulah)
-- Chat écrit (**2/3 pts**)
-- Boutique (**1 pts**)
-- Créer ses propres skins (**2 pts**)
-- Possibilité de parier des skins (**1 pts**)
-- Ajout de statistiques / classement meilleurs joueurs (**1 pts**)
-- Echange de cartes (**3 pts**)
-- Charger un spécial qui lock une colonne (**3 pts**)
-- Faire piocher l'adversaire (**1 pts**)
+    Unity : version : 2021.3.1f1
 
-# MINIMUM 28 POINTS
+    Installation : Dans un premier temps, il faudra aller sur notre repo : https://github.com/PaulVigneron/projet_dev_log_solitaire.
 
-# TOTAL 44 POINTS
+    Sur le repo, il faudra télécharger notre référentiel au format : zip.
 
-## **Technologies utilisées :**
+    Une fois ce fichier téléchargé, il faudra extraire le dossier nommé "projet_dev_log_solitaire" sur votre bureau.
 
-- Base de données : **MySql**
-- Langage utilisé : **Python**
+    Lancez UNITY et ouvrez le projet "ArtSoliStone" qui se trouve dans :"projet_dev_log_solitaire/JeuFini", puis ouvrez le fichier "Launch.cs" et modifiez le chemin de fichier à la ligne "11".
+    Ouvrez votre explorateur de fichier, allez à l'endroit où vous avez cloné le projet, puis "projet_dev_log_solitaire/BuildGame/ArtSoliStone.exe" (changez les "\" par des "/") sauvegardez le fichier puis fermez-le.
+
+    Pour lancer le serveur, allez dans "UnityServer/ServerArtSoliStone" et lancez le fichier "ServerArtSoliStone.sln". Cliquez sur la flèche verte pour le lancer.
+
+    Sur UNITY, allez dans "Assets/Scenes", choisissez la scène "SampleScene" et appuyez sur le bouton play en haut au milieu de UNITY, cliquez sur connect pour vous connecter au serveur, puis ArtSoliStone pour lancer le SOLITAIRE.
+
+    (Vous pouvez vérifier dans la console du serveur que votre connexion à bien été établie)
+
+    Le jeux se lance dans une nouvelle fenêtre et vous êtes fin prêts à jouer à notre jeux ;)
+
+Bon jeu ;)
