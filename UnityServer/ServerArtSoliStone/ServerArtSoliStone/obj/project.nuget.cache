@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "gvBzwEhTqZpeKFyqgjYo8aRGr2q1+T2el17y6wgVp/2+eQtulclIJhPPYz1GWB7NuZs1+1UJfySD4wy9Jxr+YA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\gaeta\\OneDrive\\Bureau\\ynov-2021-2022\\projet_dev_log_solitaire\\UnityServer\\ServerArtSoliStone\\ServerArtSoliStone\\ServerArtSoliStone.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gaeta\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.25\\microsoft.netcore.app.host.win-x64.3.1.25.nupkg.sha512",
+    "C:\\Users\\gaeta\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\gaeta\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\gaeta\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}
